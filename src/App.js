@@ -38,6 +38,13 @@ function App() {
                     playlists,
                 });
             });
+
+            spotify.getPlaylist('37i9dQZF1EMgoeqez82P66').then(response => {
+                dispatch({
+                    type: "SET_DISCOVER_WEEKLY",
+                    discover_weekly: response
+                })
+            })
         }
         window.location.hash = "";
     }, []);
