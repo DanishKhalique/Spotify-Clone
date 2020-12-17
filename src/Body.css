@@ -5,8 +5,8 @@
     overflow-y: overlay;
     flex: 0.8;
     color: white;
-    background: linear-gradient(transparent, rgba(0, 0, 0, 1));
-    background-color: #96EEDE;
+    background: linear-gradient(#96eedeee, rgba(0, 0, 0, 1));
+
   }
 
   .body__info>img {
@@ -30,4 +30,30 @@
 
   .body__infoText>p {
     font-size: 14px;
+  }
+
+  .body__icons {
+    display: flex;
+    align-items: center;
+  }
+
+  .body__songs {
+    margin: 20px -30px;
+
+  }
+
+  .body__icons>.MuiSvgIcon-root {
+    margin-right: 20px;
+  }
+
+  .body__shuffle {
+    font-size: 80px !important;
+    margin-left: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .body__shuffle:hover {
+    transition: 100ms transform ease-in;
+    transform: scale(1.08);
   }
